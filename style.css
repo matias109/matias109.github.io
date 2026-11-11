@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #2b1055, #0a0a12);
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(162, 155, 254, 0.1)0%, rgba(0, 0, 0, 0)70%);
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f1f2f6;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+}
+
+.subtitulo-header {
+    color:#a29bfe;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 8px rgba(162, 155, 254, 0.4);
+}
+
+#selector-planeta {
+    background-color: #1e1e2f;
+    color: #f1f2f6;
+    border: 2px solid #a29bfe;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 10px rgba(162, 155, 254, 0.3);
+    transition: all 0.3s ease;
+}
+
+#selector-planeta:hover {
+    box-shadow: 0 0 15px rgba(162, 155, 254, 0.6);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.Solar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 450px;
+    margin: 40px auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.Solar input:focus {
+    background: rgba(214, 199, 255, 0.12);
+    border-color: #a29bfe;
+    box-shadow: 0 0 10px rgba(162, 155, 254, 0.3);
+} 
+
+.tarjeta-planeta {
+    background-color: rgba(15, 23, 45, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 380px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+
+.boton-explorar:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.tarjeta-planeta img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    filter: drop-shadow(0 0 15px rgba(162, 155 254, 0.4));
+    animation: flotar 4s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.contenedor-selector {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .contenedor-selector {
+        display: block;
+    }
+}
+
+
+
+    
+
+     
+
+     
+            

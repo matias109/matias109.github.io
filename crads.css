@@ -1,0 +1,135 @@
+.contenedor-planeta {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #a29bfe;
+    font-weight: 600;
+}
+
+.Nombre {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.numero-planeta {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 12px;
+    max-width: 60px;
+    text-align: center;
+}
+
+.info-planeta {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    max-width: 260px;
+}
+
+.boton-explorar {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.boton-regresar {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+.boton-regresar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tarjeta-planeta img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    filter: drop-shadow(0 0 15px rgba(162, 155 254, 0.4));
+    animation: flotar 4s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tarjeta-planeta:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+}
+
+.solar-max {
+    width: 90%;
+    max-width: 1000%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.solar-max h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.solar-max .boton-regresar {
+    grid-column: 1 / -1;
+    justify-content: center;
+}
+
+.datos-planetas {
+    width: 100%;
+    max-width: 650%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.datos-planetas h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dato {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.dato h3 {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.dato p {
+    margin: 0;
+}
